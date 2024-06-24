@@ -1,0 +1,42 @@
+.square{
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+.square:hover{
+    background-color: blue;
+    width: 500px;
+    transform: rotatex(45deg);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: crimson;
+    border-radius: 50%;
+    animation-name: circle;
+    animation-duration: 2s;
+    /* animation-fill-mode: forwards; Final position after animation*/
+}
+@keyframes circle {
+    50%{
+        /* at 1sec */
+        background-color: lightcoral;
+        height: 200px;
+        width: 200px;
+        top: 300px;
+        left: 300px;
+    }
+    100%{
+        /* after 2 sec */
+        background-color: rgb(149, 111, 118);
+        height: 300px;
+        width: 300px;
+        top: 600px;
+        left: 600px;
+    }
+}

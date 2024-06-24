@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Hmtl</title>
+</head>
+<body>
+    <form action="/List.html" method="get" enctype="multipart/form-data">
+        <!-- action tells when we click the button where we want to go next. -->
+        <!-- Method = Post is used to update user data in server -->
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="User Name" value="Rahavi" required>
+            <!-- value for to put default details -->
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            <!-- name tag used to name the different kind of inputs -->
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" minlength="8" required>
+        </div>
+        <div>
+            <label for="db">Date of Year</label>
+            <input type="number" name="db" id="db" maxlength="4" min="1200">
+        </div>
+        <div>
+            <label for="dbirth">Date of Birth</label>
+            <input type="date" name="dbirth" id="dbirth">
+        </div>
+        <div>
+            <label for="linkdin">Linkdin</label>
+            <input type="url" name="linkdin" id="linkdin">
+        </div>
+        <div>
+            <label for="searching">Search</label>
+            <input type="search" name="searching" id="searching">
+        </div>
+        <div>
+            <label for="area">About</label>
+            <textarea name="area" id="area"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="box" required>
+            <label for="box">I'm accpeting all rules.</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="genderF" value="female">
+            <label for="genderF">Female</label>
+            <!-- For radio button we need to bring same name for all radio button same group then only it allow us to select only one. -->
+        </div>
+        <div>
+            <input type="radio" name="gender" id="genderM" value="male">
+            <!-- We need to bring value because same group radio boxes have same name. -->
+            <label for="genderM">Male</label>
+        </div>
+        <div>
+            <select name="state" id="state" multiple>
+                <option value="Solid">Solid</option>
+                <option value="Liquid">Liquid</option>
+                <option value="Gas">Gas</option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Choose File</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <input type="image" src="/Image/submit.png" width="50px" height="50px">
+            <!-- Consider this as submit button -->
+        </div>
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

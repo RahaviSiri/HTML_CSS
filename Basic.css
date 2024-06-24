@@ -1,0 +1,63 @@
+#Para{
+    /* Id Selector */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    color: lightgreen;
+}
+h1,h2{
+    /* Type Selector */
+    color: fuchsia;
+}
+*{
+    /* Universal Selector */
+    color: rgb(210,145,67);
+    /* Divide all by 16 Ex 210/16 = 13 and remainder 2 */
+    color: #d29143;
+}
+.Need{
+    /* Class Selector */
+    color: olive;
+    background-color: rgba(23, 67, 100, 0.3);
+    /* 4th one alpha means opacity */
+}
+div > p{
+    /* Child Selector */
+    color: indianred;
+}
+div a{
+    /* Descendant Selector */
+    color: black;
+}
+h1~h4{
+    /* Sibilings Selector
+    + for next connected sibiling 
+    ~ for connected sibiling need not be next */
+    color: darkblue;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: aqua;
+}
+a:visited{
+    color: coral;
+}
+a:hover{
+    color: fuchsia;
+}
+a:focus{
+    color: crimson;
+}
+a:active{
+    color: bisque;
+}
+p[class *= 'ear']{
+    /* ^ for first
+       $ for last
+       * for any combination */
+    color: slateblue;
+}

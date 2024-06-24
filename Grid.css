@@ -1,0 +1,85 @@
+body{
+    background-color: khaki;
+}
+.container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: 100px 200px auto; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: minmax(200px,2fr) 1fr 1fr; */
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  */
+        /* cause scrool bar to avoid this use auto-fit instad of 3(if 3 not necesssary) */
+    column-gap: 20px;
+    row-gap: 20px;
+    /* gap: 20px; */
+}
+.para{
+    padding: 1rem;
+    background-color: lightsalmon;
+}
+.outer{
+    display: grid;
+    /* justify-items: center; */
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 300px 200px;
+    grid-auto-rows: 100px;
+    /* for extra undefined size rows it allocate 100px size automatically */
+    gap: 20px;
+}
+.box{
+    background-color:darkorange;
+    color: aliceblue;
+    font-size: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* to keep numbers at center and can use flex too */
+    align-content: center;
+}
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    grid-column: span 2;
+}
+.box4{
+    grid-row: span 2;
+}
+
+.layout{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f";
+}
+
+.header{
+    grid-area:h;
+}
+
+.sidebar1{
+    grid-area:sb1;
+}
+
+.main{
+    grid-area: m;
+}
+.sidebar2{
+    grid-area:sb2;
+}
+
+.footer{
+    grid-area:f;
+}
+
+.layout div{
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    border:1px solid black;
+    background-color:rgb(236, 172, 172);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

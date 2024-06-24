@@ -1,0 +1,36 @@
+/* .col p{
+    width: 30%;
+    float: left;
+}
+.col p::first-letter{
+    font-size: 50px;
+} */
+/* .col p:nth-child(4){
+    clear: right;
+} */
+
+.para1{
+    background-color: rgb(125, 198, 198);
+}
+.para2{
+    background-color: rgb(153, 186, 218);
+}
+.para3{
+    background-color: rgb(171, 139, 234);
+}
+@media screen and (max-width:801px){
+    /* max width means below that width do below works */
+    .container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+    .para3{
+        background-color: violet;
+    }
+}
+@media print {
+    .para1{
+        background-color: brown;
+    }
+}

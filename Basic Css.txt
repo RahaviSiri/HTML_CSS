@@ -1,0 +1,8 @@
+16px = 100% = 1em
+Body{
+    font-size: 1.5em;
+}
+h1{
+    Relative to parent 2 * 1.5 = 3em = 48px
+    font-size: 2em;
+}

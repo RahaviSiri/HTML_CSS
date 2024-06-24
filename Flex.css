@@ -1,0 +1,60 @@
+p{
+    padding: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.para1{
+    background-color: rgb(125, 198, 198);
+    flex: 2;
+    order: 3;
+}
+.para2{
+    background-color: rgb(153, 186, 218);
+    flex: 1;
+}
+.para3{
+    background-color: rgb(171, 139, 234);
+    flex: 1;
+}
+.outer{
+    background-color: aqua;
+    min-height: 400px;
+    display: flex;
+    /* flex-wrap:wrap; */
+    /* flex-wrap for move box down when space not enough */
+    flex-direction: row;
+    /* default row direction */
+    justify-content:center;
+    /* justify-content works based in direction main axis */
+    align-items: center;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    border: 3px solid white;
+}
+/* .box2{
+    flex: 2;
+    --Keep box2 2 times the size of others--
+    flex:1 2 0px;
+    --1st one grow, 2nd one shrink--
+    flex:1;
+    --means its growth rate is 1--
+} */
+/* .box1{
+    align-self: flex-start;
+} */
+/* .box3{
+    flex-grow: 1;
+    --when increasing space it grow the width by 1 ratio with others--
+    flex-basis: 0;
+} */
+/* .box4{
+    flex-shrink:1;
+    --decrease rate--
+    flex-shrink:2;
+    --2 means decrease fastly than 1--
+} */

@@ -1,0 +1,20 @@
+table{
+    width: 300px;
+    margin: auto;
+    border-spacing: 10px 20px;
+    border-collapse: collapse;
+}
+th{
+    text-transform: uppercase;
+}
+.detail{
+    text-align: left;
+    margin: 10px;
+}
+td,.detail{
+    border: 3px solid black;
+    padding: 10px;
+}
+.name{
+    padding: 10px;
+}
